@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>26.08.2026</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<main class="stage" id="stage">
+
+  <!-- Photo filmstrip: swipe through -->
+  <section class="board" aria-hidden="true">
+    <div class="board-track">
+      <figure class="polaroid"><img src="images/sonya-1.jpg" alt=""><span class="tape"></span></figure>
+      <figure class="polaroid"><img src="images/sonya-2.jpg" alt=""><span class="tape"></span></figure>
+      <figure class="polaroid"><img src="images/sonya-3.jpg" alt=""><span class="tape"></span></figure>
+      <figure class="polaroid"><img src="images/sonya-4.jpg" alt=""><span class="tape"></span></figure>
+      <figure class="polaroid"><img src="images/sonya-5.jpg" alt=""><span class="tape"></span></figure>
+      <figure class="polaroid"><img src="images/sonya-6.jpg" alt=""><span class="tape"></span></figure>
+    </div>
+    <p class="swipe-hint">листай →</p>
+  </section>
+
+  <!-- Question screen -->
+  <section class="ask" id="ask">
+    <p class="eyebrow">для Сони</p>
+    <h1 class="greeting">Привет,<br>моя любимая Соня</h1>
+    <p class="question">Согласна ли провести весь день<br><span class="date">26.08.2026</span><br>со мной и только со мной?</p>
+
+    <div class="buttons">
+      <button class="btn btn-yes" id="btnYes" type="button">Да</button>
+      <button class="btn btn-no" id="btnNo" type="button">Нет</button>
+    </div>
+  </section>
+
+  <!-- Reveal screen -->
+  <section class="reveal" id="reveal" aria-hidden="true">
+    <p class="reveal-eyebrow">26.08.2026 · решено</p>
+    <h2 class="reveal-text">Жду этого дня.<br>Люблю тебя, Сонька.</h2>
+    <figure class="polaroid reveal-photo"><img src="images/sonya-reveal.jpg" alt=""><span class="tape"></span></figure>
+  </section>
+
+  <canvas id="confetti"></canvas>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
